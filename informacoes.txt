@@ -1,0 +1,10 @@
+momenclaturas arquitetura MVC:
+
+entity, pode ser em alguns projetos a model ou data, vão ser tranformadas em tabelas no bd
+form, é um dto data transfer object, este patern serve para fazer a comunicação entre as camadas,
+quando vamos criar um novo aluno, vamos criar usando um formulario = form
+service, fica a logica do programa, as interfaces vão representar os metodos do CRUD
+infra, desserialização e serialização do campo data
+controller, vai chamar o service e este chamar o repository que vai ter acesso ao BD
+repository, extende a interface JPARepository que vai trazer vários metodos findAll, saveAll, delete...
+view/Mapper seleciona alguns dados para exibir, em vez de retornar todos os dados como ex: o campo senha do aluno
